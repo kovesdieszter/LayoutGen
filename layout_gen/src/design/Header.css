@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222222;
+  padding: 0.4rem;
+}
+
+.flexItem {
+  padding: 0.2rem;
+  border: 0.2rem solid #777555;
+  border-radius: 7%;
+}
+
+.preHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download {
+  margin-bottom: 0.15rem;
+}

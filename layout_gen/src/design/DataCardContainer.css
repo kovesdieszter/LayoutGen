@@ -1,0 +1,14 @@
+.dataCardContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+
+  padding: 1rem;
+}
+
+.monthDataCardRow {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
