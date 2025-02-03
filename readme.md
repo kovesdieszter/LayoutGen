@@ -30,7 +30,7 @@ Key Files:
 
 ### layout_gen Folder
 
-- The application starts upon issuing the `npm start` command, sequentially building the React components. 
+- The application starts upon issuing the `npm start` command, sequentially building the React components.
 - The process is fully automated; the user only needs to press the `Start` button in the browser.
 - The application processes the contents of `idCollection.js`, retrieves the corresponding cropped images from a Cloud Storage (via API) based on the parcel ID, and populates the empty "yearbook" with them.
 - It monitors the upload process and generates a PDF (using canvas), which is then downloaded to the user's predefined local download location.
@@ -41,19 +41,18 @@ Key Files:
 
 ### Storing Images in Google Cloud
 
-For smaller-scale use or free storage, images can be stored locally in the React application's `assets` folder. However, this approach has limitations, such as high RAM usage when handling large datasets. Use `DataCardContainer.jsx` for this setup.
+This is the original and recommended approach. It uses an API to connect to Google Cloud (or other cloud storage) to retrieve cropped images. The relevant code is located in `DataCardContainer.jsx`.
 
 ### Storing Images Locally
 
-Free storage choice could be the local storage in the react application assets folder. Unfortunately, there are some disadvantages in case a large amount of data (using a lot of RAM). For this run, use the `DataCardContainerLocal.jsx`.
-
+For smaller-scale use or free storage, images can be stored locally in the React application's `assets` folder. However, this approach has limitations, such as high RAM usage when handling large datasets. Use `DataCardContainerLocal.jsx` for this setup.
 
 ## Technology
 
-- **Python**: Vversion 3.12.8
-- **React**: Version 18.3.1 
+- **Python**: Version 3.12.8
+- **React**: Version 18.3.1
 
 ## Getting Started
 
 To run the preparatory Python scripts, use the command: `python <filename>.py`.
-For the React application, after succesful `npm install`, the application starts up with `npm start` command. 
+For the React application, after succesful `npm install`, the application starts up with `npm start` command.
